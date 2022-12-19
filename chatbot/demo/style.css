@@ -1,0 +1,38 @@
+#chatbot_toggle{
+    position: absolute;
+    right: 0;
+    border: none;
+    height: 48px;
+    width: 48px;
+    background: rebeccapurple;
+    padding: 14px;
+    color: white;
+}
+
+
+#chatbot_toggle:hover{
+    background: #7d56a5;
+}
+
+.main-card {
+    background: white;
+    color: white;
+    width: 100%;
+    margin: 100%;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    right: 0;
+    bottom: 0;
+    position: relative;
+    transition: all 0.5s;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.collapsed {
+    width: 48px  !important;
+    height: 48px !important;
+    border-radius: 24px !important;
+    margin: 16px !important;
+}
