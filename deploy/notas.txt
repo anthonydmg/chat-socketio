@@ -1,0 +1,2 @@
+mkdoir mongodb
+sudo chown -R 1001 ./mongodb

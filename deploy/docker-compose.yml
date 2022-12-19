@@ -1,0 +1,21 @@
+version : '3.4'
+
+networks:
+  app-tier:
+    driver: bridge
+
+services:
+  mongodb:
+    image: 'bitnami/mongodb:5.0.14'
+    networks:
+      - app-tier
+    volumes:
+      - ./mongodb:/bitnami/mongodb
+    environment:
+      - MONGODB_ROOT_PASSWORD=admin
+      - MONGODB_USERNAME=adminbot
+      - MONGODB_PASSWORD=aerito
+      - MONGODB_DATABASE=chatbot
+    ports:
+      - "27017:27017"
+   
